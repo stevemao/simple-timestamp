@@ -1,0 +1,41 @@
+{
+  "name": "simple-timestamp",
+  "version": "0.0.0",
+  "description": "Get a simple timestamp",
+  "homepage": "https://github.com/stevemao/simple-timestamp",
+  "author": {
+    "name": "Steve Mao",
+    "email": "maochenyan@gmail.com",
+    "url": "https://github.com/stevemao"
+  },
+  "repository": "stevemao/simple-timestamp",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "simple-timestamp",
+    "simple",
+    "time",
+    "timestamp",
+    "log"
+  ],
+  "dependencies": {
+    "left-pad": "0.0.4",
+    "meow": "^3.1.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.14",
+    "jscs": "^1.13.1",
+    "jshint": "^2.7.0",
+    "mocha": "*"
+  },
+  "scripts": {
+    "coverage": "istanbul cover _mocha -- -R spec && rm -rf ./coverage",
+    "lint": "jshint *.js test --exclude node_modules && jscs *.js test",
+    "test": "npm run-script lint && mocha"
+  },
+  "bin": "cli.js"
+}
