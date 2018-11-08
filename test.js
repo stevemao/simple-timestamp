@@ -1,10 +1,10 @@
-'use strict'
-import test from 'ava'
-import simpleTimestamp from './'
+'use strict';
+import test from 'ava';
+import simpleTimestamp from '.';
 
-test('should contain current date', (t) => {
-  var now = new Date()
-  var data = simpleTimestamp({ separator: '.' }).split('.')
+test('should contain current date', t => {
+	const now = new Date();
+	const data = simpleTimestamp({separator: '.'}).split('.');
 
-  t.deepEqual(data[0], now.getFullYear().toString())
-})
+	t.deepEqual(data[0], now.getFullYear().toString());
+});
