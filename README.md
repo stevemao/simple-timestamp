@@ -18,13 +18,18 @@ $ npm install --save simple-timestamp
 var simpleTimestamp = require('simple-timestamp');
 
 simpleTimestamp();
-// => 2015.05.20.14.34.08
+// => 20181108161103
+
+simpleTimestamp({
+  separator: '.'
+});
+// => 2018.11.08.16.12.06
 ```
 
 ```sh
 $ npm install --global simple-timestamp
 $ simple-timestamp
-2015.05.20.14.36.09
+20181108161103
 ```
 
 

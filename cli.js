@@ -1,13 +1,19 @@
 #!/usr/bin/env node
-'use strict';
-var meow = require('meow');
-var simpleTimestamp = require('./');
+'use strict'
+var meow = require('meow')
+var simpleTimestamp = require('./')
 
-meow({
-  help: [
-    'Usage',
-    '  simple-timestamp'
-  ].join('\n')
-});
+const cli = meow(`Usage
+  simple-timestamp
+  simple-timestamp -s .
+  simple-timestamp --separator .
+`, {
+  flags: {
+    separator: {
+      type: 'string',
+      alias: 's'
+    }
+  }
+})
 
-console.log(simpleTimestamp());
+console.log(simpleTimestamp({ separator: cli.flags.separator || '' }))
