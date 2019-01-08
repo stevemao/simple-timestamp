@@ -27,8 +27,7 @@ simpleTimestamp({
 ```
 
 ```sh
-$ npm install --global simple-timestamp
-$ simple-timestamp
+$ npx simple-timestamp
 20181108161103
 ```
 
