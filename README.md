@@ -7,12 +7,21 @@ Fast as it doesn't have bloated methods.
 
 ## Install
 
+### Local:
+
 ```sh
-$ npm install --save simple-timestamp
+$ npm install simple-timestamp
 ```
 
+### Global:
+
+```sh
+$ npm install --global simple-timestamp
+```
 
 ## Usage
+
+### API
 
 ```js
 var simpleTimestamp = require('simple-timestamp');
@@ -25,6 +34,8 @@ simpleTimestamp({
 });
 // => 2018.11.08.16.12.06
 ```
+
+### CLI
 
 ```sh
 $ npx simple-timestamp
